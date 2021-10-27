@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover top-of-the-art restaurants we picked for you">
     <title>Oh My Food</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+    <header class="header">
         <img class="logo" src="./static/logo/ohmyfood@2x.svg" alt="Oh My Food" width="350" height="auto">
     </header>
     
     <main>
         <section class="container container-explore">
-            <div class="container-explore__location"> Paris, Belleville</div>
+            <div class="container-explore__location"> <i class="fas fa-map-marker-alt"></i> Paris, Belleville</div>
             <h3 class="container-explore__title">Book the menu you like</h3>
             <p class="container-explore__description">Discover top-of-the-art restaurants we picked for you</p>
             <button class="container-explore__btn">Explore our restaurants</button>
@@ -21,19 +24,16 @@
         <section class="container container-options">
             <h3 class="container-options__title">How it works</h3>
             <div class="container-options__optionlist">
-                <div class="container-options__optionlist__card">
-                    <p class="container-options__optionlist__card__number">1</p>
-                    <i>icon</i>
+                <div class="container-options__optionlist__card container-options__optionlist__1">
+                    <i class="fas fa-mobile-alt container-options__optionlist__card__icon"></i>
                     <p class="container-options__optionlist__card__title">Chose a restaurant</p>
                 </div>
-                <div class="container-options__optionlist__card">
-                     <p class="container-options__optionlist__card__number">2</p>
-                    <i>icon</i>
+                <div class="container-options__optionlist__card container-options__optionlist__2">
+                    <i class="fas fa-list container-options__optionlist__card__icon"></i>
                     <p class="container-options__optionlist__card__title">Create your menu</p>
                 </div>
-                <div class="container-options__optionlist__card">
-                     <p class="container-options__optionlist__card__number">3</p>
-                    <i>icon</i>
+                <div class="container-options__optionlist__card container-options__optionlist__3">
+                    <i class="fas fa-store container-options__optionlist__card__icon"></i>
                     <p class="container-options__optionlist__card__title">Go enjoy it at the restaurant</p>
                 </div>
             </div>
@@ -46,36 +46,32 @@
                     <img class="container-restaurants__card__image" src="./static/restaurants/salmon-wine.jpg" alt="Salmon Dish and White Wine">
                     <h5 class="container-restaurants__card__title">The Full Palette</h5>
                     <p class="container-restaurants__card__location">New York</p>
-                    <button class="container-restaurants__card__heart"><i>icon</i></button>
+                    <button class="container-restaurants__card__heart"><i class="far fa-heart"></i></button>
 
             </div>
             <div class="container-restaurants__card">
                     <p class="container-restaurants__card__newtag">New</p>
-                    <img class="container-restaurants__card__image" src="./static/restaurants/salmon-wine.jpg" alt="Salmon Dish and White Wine">
-                    <h5 class="container-restaurants__card__title">The Full Palette</h5>
-                    <p class="container-restaurants__card__location">New York</p>
-                    <button class="container-restaurants__card__heart"><i>icon</i></button>
-            </div>
-            <div class="container-restaurants__card">
-                    <p class="container-restaurants__card__newtag">New</p>
-                    <img class="container-restaurants__card__image" src="./static/restaurants/salmon-wine.jpg" alt="Salmon Dish and White Wine">
+                    <img class="container-restaurants__card__image" src="./static/restaurants/meatballs.jpg" alt="Meatballs with Sauce">
                     <h5 class="container-restaurants__card__title">The Enchanted Plate</h5>
                     <p class="container-restaurants__card__location">New York</p>
-                    <button class="container-restaurants__card__heart"><i>icon</i></button>
+                    <a href class="container-restaurants__card__heart"><i class="far fa-heart"></i></a>
+                    <a href class="container-restaurants__card__heart--full"><i class="fas fa-heart"></i></a>
             </div>
             <div class="container-restaurants__card">
                     <p class="container-restaurants__card__newtag">New</p>
-                    <img class="container-restaurants__card__image" src="./static/restaurants/salmon-wine.jpg" alt="Salmon Dish and White Wine">
+                    <img class="container-restaurants__card__image" src="./static/restaurants/eggs-water.jpg" alt="Egg Dish with Greens and Sauce">
                     <h5 class="container-restaurants__card__title">Bastille</h5>
                     <p class="container-restaurants__card__location">New York</p>
-                    <button class="container-restaurants__card__heart"><i>icon</i></button>
+                    <a href class="container-restaurants__card__heart"><i class="far fa-heart"></i></a>
+                    <a href class="container-restaurants__card__heart--full"><i class="fas fa-heart"></i></a>
             </div>
             <div class="container-restaurants__card">
                     <p class="container-restaurants__card__newtag">New</p>
-                    <img class="container-restaurants__card__image" src="./static/restaurants/salmon-wine.jpg" alt="Salmon Dish and White Wine">
+                    <img class="container-restaurants__card__image" src="./static/restaurants/fish-classy.jpg" alt="Fish Dish">
                     <h5 class="container-restaurants__card__title">Le Gourmand</h5>
                     <p class="container-restaurants__card__location">New York</p>
-                    <button class="container-restaurants__card__heart"><i>icon</i></button>
+                    <a href class="container-restaurants__card__heart"><i class="far fa-heart"></i></a>
+                    <a href class="container-restaurants__card__heart--full"><i class="fas fa-heart"></i></a>
             </div>
         </section>
     </main>

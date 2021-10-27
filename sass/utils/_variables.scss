@@ -1,3 +1,11 @@
 $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
+$light-primary: #eee5fb;
+
+$titles: 1.5rem;
+$heavyfont: 600;
+$title-padding: 2rem;
+$box-shadows: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$topleft-gradient: linear-gradient(to left top, $primary, $secondary);
+$bottomleft-gradient: linear-gradient(to left bottom, $primary, $secondary);
