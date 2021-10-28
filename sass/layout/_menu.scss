@@ -1,3 +1,7 @@
+.container-menu {
+    position: relative;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -6,6 +10,12 @@
     gap: 2rem;
     background-color: rgb(245, 245, 245);
     padding: 2rem 1rem;
+    border-radius: 2rem 2rem 0 0;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    max-width: 30rem;
     &__title {
         align-self: flex-start;
         font-weight: $heavyfont;
@@ -20,9 +30,24 @@
         gap: 1.5rem;
         &__title {
             align-self: flex-start;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 60%;
+                height: 0.2rem;
+                bottom: -35%;
+                background-color: $tertiary;
+            }
         }
     }
 
+    &__img {
+        width: 100%;
+        max-width: 30rem;
+        object-fit: cover;
+        object-position: top;
+    }
     &__card {
         display: flex;
         flex-direction: column;

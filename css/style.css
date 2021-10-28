@@ -394,6 +394,15 @@ input {
   font-size: 0.8rem;
 }
 
+.footer--menu {
+  position: absolute;
+  bottom: -120%;
+}
+
+.container-menu {
+  position: relative;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -402,6 +411,12 @@ input {
   gap: 2rem;
   background-color: whitesmoke;
   padding: 2rem 1rem;
+  border-radius: 2rem 2rem 0 0;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  max-width: 30rem;
 }
 .menu__title {
   align-self: flex-start;
@@ -418,6 +433,21 @@ input {
 }
 .menu__section__title {
   align-self: flex-start;
+  position: relative;
+}
+.menu__section__title::before {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 0.2rem;
+  bottom: -35%;
+  background-color: #99e2d0;
+}
+.menu__img {
+  width: 100%;
+  max-width: 30rem;
+  object-fit: cover;
+  object-position: top;
 }
 .menu__card {
   display: flex;
@@ -452,6 +482,8 @@ input {
 .logo {
   width: 50%;
   height: auto;
+  max-width: 30rem;
+  max-height: auto;
 }
 
 .btn--primary {
