@@ -2,5 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     margin: 1rem;
+    &__arrow {
+        position: absolute;
+        top: -15%;
+        left: 10%;
+        font-size: 2rem;
+    }
 }

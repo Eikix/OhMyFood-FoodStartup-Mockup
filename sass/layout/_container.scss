@@ -140,6 +140,7 @@
         flex-direction: column;
         height: 20rem;
         width: 100%;
+        max-width: 20rem;
         border-radius: 5%;
         background-color: white;
         &__newtag {
@@ -153,7 +154,7 @@
         }
         &__image {
             width: 100%;
-            height: 80%;
+            height: 15rem;
             object-fit: cover;
             object-position: top;
             border-radius: 5% 5% 0 0;
@@ -170,17 +171,18 @@
             font-size: 1.2rem;
             bottom: 7%;
             right: 5%;
+            z-index: 10;
             &:hover {
-                opacity: 0;
+                transform: scale(0);
             }
-            &:hover &--full {
+            &:hover + &--full {
                 transform: scale(1);
-                transition: transform 200ms;
-                transform-origin: bottom;
             }
         }
         &__heart--full {
             transform: scale(0);
+            transition: transform 1000ms ease-in;
+            transform-origin: bottom;
             color: $primary;
             position: absolute;
             font-size: 1.2rem;
