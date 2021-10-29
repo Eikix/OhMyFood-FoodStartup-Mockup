@@ -472,6 +472,7 @@ input {
   width: 100%;
   height: 5rem;
   gap: 1rem;
+  cursor: pointer;
 }
 .menu__card__slider {
   display: flex;
@@ -521,6 +522,9 @@ input {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
+}
+.menu__btn {
+  width: 40%;
 }
 
 .logo {
