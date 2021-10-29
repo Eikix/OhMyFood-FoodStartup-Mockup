@@ -12,6 +12,8 @@
     gap: 2rem;
     background-color: rgb(245, 245, 245);
     padding-bottom: 2rem;
+    max-width: 30rem;
+    margin: 2rem auto;
 
     &__location {
         background-color: rgb(226, 226, 226);
@@ -45,6 +47,8 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    max-width: 30rem;
+    margin: 2rem auto;
     &__title {
         font-size: $titles;
         font-weight: $heavyfont;
@@ -56,7 +60,7 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        width: 90vw;
+        width: 90%;
 
         &__card {
             display: grid;
@@ -127,6 +131,8 @@
     gap: 2rem;
     background-color: rgb(245, 245, 245);
     padding: 2rem 1rem;
+    max-width: 30rem;
+    margin: 0 auto;
 
     &__title {
         font-size: $titles;
