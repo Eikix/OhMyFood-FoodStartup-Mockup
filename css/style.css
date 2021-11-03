@@ -402,6 +402,16 @@ input {
   font-size: 0.8rem;
 }
 
+@keyframes fly-in {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 .container-menu {
   display: grid;
   grid-template-rows: repeat(36, 1fr);
@@ -458,6 +468,36 @@ input {
   height: 0.2rem;
   bottom: -35%;
   background-color: #99e2d0;
+}
+.menu__section--starters {
+  -webkit-animation: fly-in 1200ms 0s 1 ease-out;
+  /* Safari 4+ */
+  -moz-animation: fly-in 1200ms 0s 1 ease-out;
+  /* Fx 5+ */
+  -o-animation: fly-in 1200ms 0s 1 ease-out;
+  /* Opera 12+ */
+  animation: fly-in 1200ms 0s 1 ease-out;
+  /* IE 10+, Fx 29+ */
+}
+.menu__section--dishes {
+  -webkit-animation: fly-in 1800ms 0s 1 ease-out;
+  /* Safari 4+ */
+  -moz-animation: fly-in 1800ms 0s 1 ease-out;
+  /* Fx 5+ */
+  -o-animation: fly-in 1800ms 0s 1 ease-out;
+  /* Opera 12+ */
+  animation: fly-in 1800ms 0s 1 ease-out;
+  /* IE 10+, Fx 29+ */
+}
+.menu__section--desserts {
+  -webkit-animation: fly-in 2200ms 0s 1 ease-out;
+  /* Safari 4+ */
+  -moz-animation: fly-in 2200ms 0s 1 ease-out;
+  /* Fx 5+ */
+  -o-animation: fly-in 2200ms 0s 1 ease-out;
+  /* Opera 12+ */
+  animation: fly-in 2200ms 0s 1 ease-out;
+  /* IE 10+, Fx 29+ */
 }
 .menu__card {
   display: flex;

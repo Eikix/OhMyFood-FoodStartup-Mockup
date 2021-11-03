@@ -1,3 +1,5 @@
+@import '../functions/keyframes';
+
 .container-menu {
     display: grid;
     grid-template-rows: repeat(36, 1fr);
@@ -52,6 +54,24 @@
                 bottom: -35%;
                 background-color: $tertiary;
             }
+        }
+        &--starters {
+            -webkit-animation: fly-in 1200ms 0s 1 ease-out; /* Safari 4+ */
+            -moz-animation: fly-in 1200ms 0s 1 ease-out; /* Fx 5+ */
+            -o-animation: fly-in 1200ms 0s 1 ease-out; /* Opera 12+ */
+            animation: fly-in 1200ms 0s 1 ease-out; /* IE 10+, Fx 29+ */
+        }
+        &--dishes {
+            -webkit-animation: fly-in 1800ms 0s 1 ease-out; /* Safari 4+ */
+            -moz-animation: fly-in 1800ms 0s 1 ease-out; /* Fx 5+ */
+            -o-animation: fly-in 1800ms 0s 1 ease-out; /* Opera 12+ */
+            animation: fly-in 1800ms 0s 1 ease-out; /* IE 10+, Fx 29+ */
+        }
+        &--desserts {
+            -webkit-animation: fly-in 2200ms 0s 1 ease-out; /* Safari 4+ */
+            -moz-animation: fly-in 2200ms 0s 1 ease-out; /* Fx 5+ */
+            -o-animation: fly-in 2200ms 0s 1 ease-out; /* Opera 12+ */
+            animation: fly-in 2200ms 0s 1 ease-out; /* IE 10+, Fx 29+ */
         }
     }
 
