@@ -123,7 +123,8 @@ input {
   font-family: "Roboto", sans-serif;
 }
 
-.title {
+.title,
+.loading {
   font-family: "Shrikhand", "cursive";
 }
 
@@ -131,6 +132,10 @@ input {
   margin-bottom: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.container--main {
+  min-height: 100vh;
+  min-width: 100%;
 }
 
 .container-explore {
@@ -180,6 +185,7 @@ input {
   font-size: 1.5rem;
   font-weight: 600;
   align-self: flex-start;
+  margin-left: 1rem;
 }
 .container-options__optionlist {
   display: flex;
@@ -412,6 +418,32 @@ input {
     opacity: 1;
   }
 }
+@keyframes loading {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  90% {
+    opacity: 1;
+    z-index: 100;
+  }
+  95% {
+    opacity: 0.7;
+    z-index: 100;
+  }
+  99% {
+    opacity: 0.4;
+    z-index: 100;
+  }
+  100% {
+    z-index: -100;
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .container-menu {
   display: grid;
   grid-template-rows: repeat(36, 1fr);
@@ -585,6 +617,85 @@ input {
 .btn--primary:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 12px 24px 3px;
   background: linear-gradient(to left top, #ab72f0, #ffa1e4);
+}
+
+@keyframes fly-in {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  90% {
+    opacity: 1;
+    z-index: 100;
+  }
+  95% {
+    opacity: 0.7;
+    z-index: 100;
+  }
+  99% {
+    opacity: 0.4;
+    z-index: 100;
+  }
+  100% {
+    z-index: -100;
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.spinner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -100;
+  background-color: white;
+  animation: loading 2s 0s 1 ease-in-out;
+}
+.spinner__item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.spinner__item::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  width: 100%;
+  height: 100%;
+  margin-top: -50%;
+  margin-left: -20%;
+  border-radius: 50%;
+  border-top: 20px solid #9356dc;
+  border-right: 20px solid transparent;
+  animation: spinner 0.9s ease-in-out infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

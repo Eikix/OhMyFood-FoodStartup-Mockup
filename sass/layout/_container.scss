@@ -2,6 +2,10 @@
     margin-bottom: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    &--main {
+        min-height: 100vh;
+        min-width: 100%;
+    }
 }
 
 .container-explore {
@@ -53,6 +57,7 @@
         font-size: $titles;
         font-weight: $heavyfont;
         align-self: flex-start;
+        margin-left: 1rem;
     }
     &__optionlist {
         display: flex;

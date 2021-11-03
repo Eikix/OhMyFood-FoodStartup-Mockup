@@ -13,7 +13,11 @@
         <img class="logo" src="./static/logo/ohmyfood@2x.svg" alt="Oh My Food" width="350" height="auto">
     </header>
     
-    <main>
+    <main class="container--main">
+        <div class="spinner">
+            <p class="loading">Loading...</p>
+            <div class="spinner__item"></div>
+        </div>
         <section class="container container-explore">
             <div class="container-explore__location"> <i class="fas fa-map-marker-alt"></i> Paris, Belleville</div>
             <h3 class="container-explore__title">Book the menu you like</h3>
@@ -26,7 +30,7 @@
             <div class="container-options__optionlist">
                 <div class="container-options__optionlist__card container-options__optionlist__1">
                     <i class="fas fa-mobile-alt container-options__optionlist__card__icon"></i>
-                    <p class="container-options__optionlist__card__title">Chose a restaurant</p>
+                    <p class="container-options__optionlist__card__title">Choose a restaurant</p>
                 </div>
                 <div class="container-options__optionlist__card container-options__optionlist__2">
                     <i class="fas fa-list container-options__optionlist__card__icon"></i>
